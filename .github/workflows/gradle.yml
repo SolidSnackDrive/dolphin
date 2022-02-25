@@ -33,3 +33,9 @@ jobs:
         arguments: assembleDebug
         gradle-executable: ./Source/Android/gradlew
         build-root-directory: ./Source/Android/
+        
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: doplhin-android-debug
+        path: ./Source/Android/app/build/outputs/apk/app-debug.apk

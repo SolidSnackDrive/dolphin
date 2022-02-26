@@ -12,7 +12,7 @@ on:
     types: [reopened, opened]
 
 jobs:
-  triage:
+  label_issues:
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -20,8 +20,7 @@ jobs:
       - name: Set Issue Name
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
         with:
-            bodyContains: 'documentation'
-            add-labels: "documentation"
+            add-labels: "CI setup, bug"
             repo-token: ${{ secrets.GITHUB_TOKEN }}
 
           

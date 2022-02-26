@@ -9,7 +9,7 @@ name: Label Issue
 
 on:
   issues:
-    types: [opened, reopened]
+    types: [reopened, opened]
 
 jobs:
   label_issues:
@@ -18,7 +18,7 @@ jobs:
       issues: write
     steps:
       - name: Set Issue Name
-        uses: andymckay/labeler@5c59dabdfd4dd5bd9c6e6d255b01b9d764af4414
+        uses: andymckay/labeler@1.0.2
         with:
             bodyContains: 'documentation'
             add-labels: "documentation"

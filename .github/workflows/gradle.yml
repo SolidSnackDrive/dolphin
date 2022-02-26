@@ -10,7 +10,8 @@ name: Gradle and CMake CI
 on:
   issues:
     types:
-      -opened
+      - reopened
+      - opened
 
 jobs:
   label_issues:

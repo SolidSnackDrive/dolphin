@@ -12,7 +12,7 @@ on:
     types: [reopened, opened]
 
 jobs:
-  label_issues:
+  triage:
     runs-on: ubuntu-latest
     permissions:
       issues: write

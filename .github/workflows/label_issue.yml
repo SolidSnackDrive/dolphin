@@ -17,12 +17,12 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Simple Issue Labeler
-        uses: andymckay/labeler@1.0.4
-
+      - name: Set Issue Name
+        uses: andymckay/labeler@5c59dabdfd4dd5bd9c6e6d255b01b9d764af4414
         with:
-          add-labels: "CI setup issue"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+            bodyContains: 'documentation'
+            add-labels: "documentation"
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
 
           
       

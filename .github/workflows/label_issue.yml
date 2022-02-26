@@ -18,7 +18,7 @@ jobs:
       issues: write
     steps:
       - name: Set Issue Name
-        uses: andymckay/labeler@1.0.2
+        uses: andymckay/labeler@master
         with:
             bodyContains: 'documentation'
             add-labels: "documentation"

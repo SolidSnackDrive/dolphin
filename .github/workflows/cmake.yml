@@ -19,7 +19,7 @@ jobs:
     
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, ubuntu-18.04]
     
     steps:
     - name: Checkout repository with submodule update

@@ -24,6 +24,6 @@ jobs:
         with:
           add-labels: "CI setup issue, bug, help wanted"
         env: 
-          GITHUB_TOKEN: $ {{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
           
       

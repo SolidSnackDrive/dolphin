@@ -12,12 +12,14 @@ on:
     types: [opened, reopened]
 
 jobs:
-  automate_issues_label:
+  label_issues:
     runs-on: ubuntu-latest
-
+    permissions:
+      issues: write
     steps:
-      - name: Set Issue Names
-        uses: andymckay/labeler@master
+      - name: Simple Issue Labeler
+        uses: andymckay/labeler@1.0.4
+
         with:
           add-labels: "CI setup issue"
           repo-token: ${{ secrets.GITHUB_TOKEN }}
